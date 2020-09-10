@@ -1,27 +1,123 @@
-body {
-    background-color: #ffe5b9;
-
+@font-face{
+    src: url(fonts/OpenSansCondensed-Light.ttf);
+    font-family: opensans;
+}
+@font-face{
+    src: url(fonts/OpenSansCondensed-Bold.ttf);
+    font-family: opensansbold;
 }
 
+h1{
+    font-family: opensansbold;
+    font-size: 50px;
+    text-align: center;
+    color: #0F4C81;
+}
 #container {
-    background-color: #ffd4b9;
-    border: 5px solid #ffc4b9;
-    height: 275px;
+    background-color: #0F4C81;
+    border: 5px solid #B5C7D3;
+    border-width: 10px;
+    height: 300px;
     width: 750px;
     margin: 0 auto;
     text-align: center;
-
+    font-family: opensans;
+    font-size: 25px;  
+    border-radius: 5px;  
 }
+
+
 #btn{
     margin: 50px auto;
     height: 50px;
     width: 250px;
-    font-size: 20px;
-    background-color: #e6a379;
+    font-size: 25px;
+    background-color: #B5C7D3;
+    font-family: opensans; 
+    border-radius: 5px;   
 }
 
 #output {
     margin: 25px auto;
     font-size: 26px;
- 
+    color: #B5C7D3;
+}
+
+hr{
+    border-color: #B5C7D3;
+    width: 250px ;
+}
+
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   }
+
+.btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media only screen and (min-width: 360px){
+
+    #container {
+        
+        border-width: 5px;
+        height: 400px;
+        width: 300px;
+    }    
+
+}
+
+@media only screen and (min-width: 375px){
+
+    #container {
+     
+        border-width: 10px;
+        height: 400px;
+        width: 320px;
+    }
+
+    #output {
+        margin: 25px 10px;
+    }
+}
+
+@media only screen and (min-width: 414px){
+
+    #container {
+     
+        border-width: 10px;
+        height: 400px;
+        width: 360px;
+    }
+
+    #output {
+        margin: 25px 10px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    #container {
+     
+        border-width: 10px;
+        height: 400px;
+        width: 600px;
+    }
+
+    #output {
+        margin: 25px 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    #container {
+        border-width: 10px;
+        height: 300px;
+        width: 750px; 
+    }
+    
+
 }
